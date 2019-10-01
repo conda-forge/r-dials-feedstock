@@ -1,4 +1,4 @@
-{% set version = '0.0.2' %}
+{% set version = "0.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dials_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dials/dials_{{ version }}.tar.gz
-  sha256: b06031964d84d3aabf11fd8e65f50e38ace88c6136321f25908c8e247683e8c6
+  sha256: 023d88863344dc81527e47b5669df01b000577ac31dc0cbd5611301fd532d87a
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1001
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
