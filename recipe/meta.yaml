@@ -1,4 +1,4 @@
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dials_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dials/dials_{{ version }}.tar.gz
-  sha256: ca59d2a41a1ae366ecf05d6f28e483cf26b5e6021f59975408805374af367f13
+  sha256: e039f65dca34700749a5e4050b293a6e28a7c60392bbc42545783496a691dceb
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -52,12 +52,11 @@ test:
 about:
   home: https://tidymodels.github.io/dials
   license: GPL-2
-  summary: Many models contain tuning parameters (i.e. parameters that cannot be directly estimated
-    from the data). These tools can be used to define objects for creating, simulating,
-    or validating values for such parameters.
+  summary: Many models contain tuning parameters (i.e. parameters that cannot be directly estimated from the data). These tools can be used to define objects for
+    creating, simulating, or validating values for such parameters.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
