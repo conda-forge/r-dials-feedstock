@@ -3,7 +3,7 @@ About r-dials
 
 Home: https://tidymodels.github.io/dials
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
 Feedstock license: BSD 3-Clause
 
