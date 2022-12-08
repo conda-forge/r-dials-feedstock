@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -25,29 +25,33 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-cli
     - r-dicedesign
     - r-dplyr >=0.8.5
     - r-glue
-    - r-hardhat >=0.1.6.9000
+    - r-hardhat >=1.1.0
     - r-lifecycle
+    - r-pillar
     - r-purrr
-    - r-rlang
+    - r-rlang >=1.0.1
     - r-scales
     - r-tibble
-    - r-vctrs >=0.3.1
+    - r-vctrs >=0.3.8
     - r-withr
   run:
     - r-base
+    - r-cli
     - r-dicedesign
     - r-dplyr >=0.8.5
     - r-glue
-    - r-hardhat >=0.1.6.9000
+    - r-hardhat >=1.1.0
     - r-lifecycle
+    - r-pillar
     - r-purrr
-    - r-rlang
+    - r-rlang >=1.0.1
     - r-scales
     - r-tibble
-    - r-vctrs >=0.3.1
+    - r-vctrs >=0.3.8
     - r-withr
 
 test:
