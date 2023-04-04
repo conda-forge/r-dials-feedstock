@@ -1,11 +1,11 @@
-About r-dials
-=============
+About r-dials-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dials-feedstock/blob/main/LICENSE.txt)
 
 Home: https://tidymodels.github.io/dials
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dials-feedstock/blob/main/LICENSE.txt)
 
 Summary: Many models contain tuning parameters (i.e. parameters that cannot be directly estimated from the data). These tools can be used to define objects for creating, simulating, or validating values for such parameters.
 
