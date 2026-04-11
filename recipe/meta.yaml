@@ -1,4 +1,4 @@
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dials_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dials/dials_{{ version }}.tar.gz
-  sha256: 08aa4735616ec24bd7b066518f607535ce97fa78b1aab2f29df24d9ac435df42
+  sha256: 7242dcd2d50ac2bc2f23d319e3ac12b9a81d859596ab8f83ef68108e5b574c55
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
